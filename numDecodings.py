@@ -9,6 +9,9 @@ message containing letters from A-Z is being encoded to numbers using the follow
 'Z' -> 26
 Given a non-empty string containing only digits, determine the total number of ways to decode it.
 """
+
+import unittest
+
 class Solution:
     def numDecodings(self, s: str) -> int:
         N = len(s)
@@ -28,3 +31,5 @@ class Solution:
                 
             
         return dp[N-1]
+
+class unitTests
