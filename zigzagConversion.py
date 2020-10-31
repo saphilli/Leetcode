@@ -1,5 +1,15 @@
 #Runtime: 76 ms, faster than 31.53% of Python3 online submissions for ZigZag Conversion.
 #Memory Usage: 14.2 MB, less than 6.88% of Python3 online submissions for ZigZag Conversion.
+
+#The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: 
+#
+#P   A   H   N
+#A P L S I I G
+#Y   I   R
+#And then read line by line: "PAHNAPLSIIGYIR"
+
+#Write the code that will take a string and make this conversion given a number of rows
+
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if len(s) < 2 or numRows <2:
