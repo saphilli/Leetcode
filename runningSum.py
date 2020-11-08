@@ -1,6 +1,6 @@
 #Runtime: 28 ms, faster than 99.00% of Python3 online submissions for Running Sum of 1d Array.
 #Memory Usage: 14.4 MB, less than 99.99% of Python3 online submissions for Running Sum of 1d Array.
-
+#LC Easy
 #Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 #Return the running sum of nums.
 class Solution:
