@@ -34,8 +34,9 @@ class Solution:
             if d >= 200:
                 return True
             adjacents = []
+            
             #check if all possible moves are valid
-            if (x-1 > 0):
+            if (x-1 > 0): 
                 adjacents.append((x-1,y))
             if (x+1 < 1000000):
                 adjacents.append((x+1,y))
@@ -47,9 +48,10 @@ class Solution:
             for adj in adjacents:
                 if adj[0] == target[0] and adj[1]== target[1]:
                     return True
-                #check if we have visited adj square
+              
+                #check if we have visited adj square before 
                 if adj not in visited:
-                    #if the adj square x is not in the blocked_dict or the y is not  
+                    #if the adj square is not in the blocked_dict
                     if adj not in blocked_dict:
                         visit_queue.append((adj[0],adj[1],d+1))
                         visited[adj] = True
